@@ -52,9 +52,9 @@ def parfunction_out(data,weight_h,weight_o,label):
     return par
     
 
-def cal(data,label,lr,epochs):
+def cal(data,label,hiden,lr,epochs):
     #隐藏层神经元个数
-    t1=5
+    t1=hiden
     #输出层神经元个数
     t2=len(label[0])
     
@@ -85,7 +85,7 @@ def cal(data,label,lr,epochs):
 if __name__ == '__main__':
 
     from 样本 import data,label
-    cal(data,label,lr=0.1,epochs=1000)
+    cal(data=data,label=label,hiden=5,lr=0.1,epochs=2000)
 
 
 
