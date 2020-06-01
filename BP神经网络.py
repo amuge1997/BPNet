@@ -71,12 +71,12 @@ def cal(data,label,hiden,lr,epochs):
         weight_h_new=weight_h-stp*par_h
         weight_o_new=weight_o-stp*par_o
 
-    # # 输出隐藏层权重
-    # for i in range(len(weight_h_new)):
-    #     print(list(weight_h_new[i]),',','\n')
-    # # 输出输出层权重
-    # for i in range(len(weight_o_new)):
-    #     print(list(weight_o_new[i]),',','\n')
+    # 输出隐藏层权重
+    for i in range(len(weight_h_new)):
+        print(list(weight_h_new[i]),',','\n')
+    # 输出输出层权重
+    for i in range(len(weight_o_new)):
+        print(list(weight_o_new[i]),',','\n')
 
     weight_h_final = weight_h_new
     weight_o_final = weight_o_new
